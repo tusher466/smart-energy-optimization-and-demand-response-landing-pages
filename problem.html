@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" style="--acc:#C2503A">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Problem — Smart energy optimization and demand response</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html"><span class="brand-mark">E</span><span><small>Smart energy optimization</small><b>and demand response</b></span></a>
+  <div class="nav-links">
+    <a href="problem.html" class="on">The Problem</a><a href="admin.html">Admin</a><a href="operator.html">Operator</a><a href="manager.html">Manager</a><a href="viewer.html">Viewer</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-bg"></div><div class="orb a"></div><div class="orb b"></div>
+<div class="hero-in">
+  <div>
+    <span class="eyebrow rise"><span class="dot"></span>Why this project exists</span>
+    <h1 class="hero-h rise d1">Every evening, the grid <em>bleeds money.</em></h1>
+    <p class="lede rise d2">Same load, same wires, same sunset — yet at 7pm electricity costs the most, pollutes the most, and fails the most. Five wounds. One decision loop to close them.</p>
+    <div class="cta-row rise d3">
+      <a class="btn btn-acc" href="#wounds">See the five wounds</a>
+      <a class="btn btn-ghost" href="operator.html">Skip to the cure</a>
+    </div>
+  </div>
+  <figure class="hero-shot rise d2">
+    <span class="live-tag" style="border-color:#C2503A88;color:#C2503A"><i style="background:#C2503A"></i>GRID UNDER STRESS</span>
+    <img src="assets/prob-city.jpg" alt="Dhaka blazing with light after dark" class="flicker-img">
+    <figcaption>Dhaka after dark — demand at its angriest · photo: Wikimedia Commons</figcaption>
+  </figure>
+</div></header>
+
+<div class="ticker"><div class="ticker-in">
+  <b>670 g CO₂ / kWh</b> AT THE EVENING PEAK · <b>FORECASTS NOBODY TRUSTS</b> · FLEETS THAT SLEEP THROUGH CHEAP POWER · <b>SAVINGS NOBODY CAN PROVE</b> · BLACKOUTS WITH NO REHEARSAL ·
+  <b>670 g CO₂ / kWh</b> AT THE EVENING PEAK · <b>FORECASTS NOBODY TRUSTS</b> · FLEETS THAT SLEEP THROUGH CHEAP POWER · <b>SAVINGS NOBODY CAN PROVE</b> · BLACKOUTS WITH NO REHEARSAL ·
+</div></div>
+
+<section class="sec" id="wounds"><div class="wrap">
+  <div class="sec-head rise">
+    <div class="kicker">The problem statement</div>
+    <h2>Five wounds. All of them billable.</h2>
+    <p>Each one costs real money, real carbon, or real darkness — every single day. Scroll slowly; each one hurts.</p>
+  </div>
+
+  <div class="grid2 stagger">
+    <div class="card p-0 overflow-hidden rise d1">
+      <img src="assets/prob-city.jpg" alt="Dhaka lit up at night" class="wound-img">
+      <div class="p-4">
+        <span class="wtag">Wound 01 · The expensive evening</span>
+        <h3 class="font-serif-d">Peak power is the dirtiest power</h3>
+        <p class="muted">6–11pm: gas plants fire up, tariffs spike, feeders trip. The same kilowatt-hour costs the most and pollutes the most — ~670 g CO₂ in Dhaka's mix.</p>
+        <svg viewBox="0 0 300 90" class="w-full mt-2" role="img" aria-label="Demand curve spiking red at 7pm">
+          <path d="M10,70 L70,66 L120,52 L170,44 L200,40 L222,14 L244,44 L270,58 L295,66" fill="none" stroke="#C2503A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" class="peakdraw" />
+          <circle cx="222" cy="14" r="5" fill="#C2503A" class="hotspot" />
+          <text x="222" y="72" text-anchor="middle" font-size="10" fill="currentColor" opacity=".6">7pm</text>
+        </svg>
+      </div>
+    </div>
+    <div class="card p-0 overflow-hidden rise d2">
+      <img src="assets/prob-clouds.jpg" alt="Towering monsoon clouds" class="wound-img">
+      <div class="p-4">
+        <span class="wtag">Wound 02 · Forecasts nobody trusts</span>
+        <h3 class="font-serif-d">A single line is a single lie</h3>
+        <p class="muted">Solar and load forecasts arrive as one confident line with no bands, no provenance, no confidence. Operators learn to ignore them — exactly when clouds matter most.</p>
+        <svg viewBox="0 0 300 70" class="w-full mt-2" role="img" aria-label="A single shaky forecast line">
+          <path d="M10,50 L60,46 L110,48 L160,30 L210,44 L260,40 L295,42" fill="none" stroke="#8E9A92" stroke-width="2.5" stroke-dasharray="7 5" class="jitter" />
+          <text x="285" y="24" text-anchor="end" font-size="16" fill="#C98A2B">?</text>
+        </svg>
+      </div>
+    </div>
+    <div class="card p-0 overflow-hidden rise d3">
+      <img src="assets/prob-parked.jpg" alt="Cars parked idle on a rainy night street" class="wound-img">
+      <div class="p-4">
+        <span class="wtag">Wound 03 · Fleets asleep at the wheel</span>
+        <h3 class="font-serif-d">Batteries idle while prices burn</h3>
+        <p class="muted">EVs plug in at 7pm and charge immediately — the worst possible hour — or sit idle all night while cheap, clean power flows past them unused.</p>
+        <div class="batt-row" aria-hidden="true"><span class="batt"><i style="animation-delay:0s"></i></span><span class="batt"><i style="animation-delay:.7s"></i></span><span class="batt"><i style="animation-delay:1.4s"></i></span></div>
+      </div>
+    </div>
+    <div class="card p-0 overflow-hidden rise d4">
+      <div class="receipt">
+        <div class="receipt-head">SAVINGS RECEIPT <span class="stamp">UNVERIFIED</span></div>
+        <div class="rline" style="width:82%"></div><div class="rline" style="width:64%"></div>
+        <div class="rline" style="width:71%;animation-delay:.8s"></div><div class="rline" style="width:48%;animation-delay:1.2s"></div>
+        <div class="receipt-total">saved: <b>???</b> · CO₂: <b>???</b> · peak: <b>???</b></div>
+      </div>
+      <div class="p-4">
+        <span class="wtag">Wound 04 · Savings nobody can prove</span>
+        <h3 class="font-serif-d">Claims without receipts die in meetings</h3>
+        <p class="muted">Shifting load works — but without metered methodology and an auditable trail, pilots never convert into contracts. Every saving needs a receipt.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card overflow-hidden rise d1" style="margin-top:14px">
+    <div class="grid2" style="grid-template-columns:1fr;margin:0">
+      <div class="rain" style="position:relative;overflow:hidden">
+        <img src="assets/prob-blackout.jpg" alt="Flooded fields after the 2016 Bangladesh floods" class="wound-img" style="height:260px">
+        <div class="blackout-tag">72 HOURS DARK · NO REHEARSAL</div>
+      </div>
+      <div class="p-4">
+        <span class="wtag">Wound 05 · Blackouts with no rehearsal</span>
+        <h3 class="font-serif-d">Recovery plans live in PDFs</h3>
+        <p class="muted">When storms knock lines down, islanding, cranking power and hospital-first pickup are improvised — never rehearsed with stability checks. Floods don't wait for paperwork.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="card p-5 text-center fade-up" style="border-color:#C2503A66">
+    <p class="muted text-xs uppercase tracking-wide">The cost of doing nothing, every evening</p>
+    <div class="num" style="font-size:clamp(28px,4.4vw,44px);font-weight:700;color:#C2503A">Peak-priced · peak-carbon · peak-risk</div>
+    <p class="muted text-sm mt-1">Same grid. Same sunset. Different decision.</p>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="cta rise">
+    <h2>Five wounds. One decision loop.</h2>
+    <p>Forecast → uncertainty → optimize → act → explain → measure. See how each role closes them.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="btn btn-acc" href="operator.html">See the cure — Operator</a>
+      <a class="btn btn-ghost" href="index.html">All roles</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>Smart energy optimization and demand response · control room</span>
+  <span style="margin-left:auto"><a href="https://github.com/tusher466/smart-energy-optimization-and-demand-response" target="_blank" rel="noreferrer">Source on GitHub</a></span>
+</div></footer>
+</body>
+</html>

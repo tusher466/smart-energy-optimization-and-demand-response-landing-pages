@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" style="--acc:#E0A73A">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Admins — Smart energy optimization and demand response</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html"><span class="brand-mark">E</span><span><small>Smart energy optimization</small><b>and demand response</b></span></a>
+  <div class="nav-links">
+    <a href="problem.html">Problem</a>
+    <a href="admin.html" class="on">Admin</a><a href="operator.html">Operator</a><a href="manager.html">Manager</a><a href="viewer.html">Viewer</a>
+    <span class="role-pill">Admin seat</span>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-bg"></div><div class="orb a"></div><div class="orb b"></div>
+<div class="hero-in">
+  <div>
+    <span class="eyebrow rise"><span class="dot"></span>For administrators</span>
+    <h1 class="hero-h rise d1">Total control of the <em>energy brain.</em></h1>
+    <p class="lede rise d2">Users, roles, audit trails, security policy — every action in the platform is tied to a person and a permission. Nothing happens anonymously. Nothing happens twice without a receipt.</p>
+    <div class="cta-row rise d3">
+      <a class="btn btn-acc" href="#demo">Get admin access</a>
+      <a class="btn btn-ghost" href="#powers">See the powers</a>
+    </div>
+  </div>
+  <figure class="hero-shot rise d2">
+    <span class="live-tag"><i></i>RBAC ENFORCED</span>
+    <img src="assets/hero-admin.jpg" alt="Solar plant control room with monitoring walls">
+    <figcaption>100MW solar plant control room — photo: Wikimedia Commons</figcaption>
+  </figure>
+</div></header>
+
+<div class="ticker"><div class="ticker-in">
+  <b>4 ROLES</b> · PBKDF2 PASSWORDS · <b>EXPIRING JWT</b> · 5- STRIKE LOCKOUT · <b>AUDIT EVERYTHING</b> · SEED / RESET · <b>4 ROLES</b> · PBKDF2 PASSWORDS · <b>EXPIRING JWT</b> · 5- STRIKE LOCKOUT · <b>AUDIT EVERYTHING</b> · SEED / RESET ·
+</div></div>
+
+<section class="sec" id="powers"><div class="wrap">
+  <div class="sec-head rise">
+    <div class="kicker">Admin powers</div>
+    <h2>The keys to the control room.</h2>
+    <p>Four roles, one matrix, zero ambiguity. The UI only ever shows what the API will actually allow.</p>
+  </div>
+  <div class="grid3 stagger">
+    <div class="fcard rise d1"><span class="ic"><img src="assets/admin.png" alt="Admin icon"></span>
+      <h3>Users &amp; roles</h3><p>Create accounts, assign viewer → manager → operator → admin, disable anyone instantly. Demotions take effect on the very next request — stolen tokens die with the role.</p>
+      <div class="stat">4 <small>roles, 1 matrix</small></div></div>
+    <div class="fcard rise d2"><span class="ic"><img src="assets/operator.png" alt="Operator icon"></span>
+      <h3>Override log</h3><p>Every approval, rejection, seed, and reset lands in a filterable timeline with a live approval donut. Audit season becomes a screenshot.</p>
+      <div class="flowline"><span class="node">approve</span><span class="wire"></span><span class="node">logged ✓</span></div></div>
+    <div class="fcard rise d3"><span class="ic"><img src="assets/viewer.png" alt="Viewer icon"></span>
+      <h3>Security that bites</h3><p>PBKDF2-hashed passwords, 12-hour expiring JWTs, 5 wrong tries locks an account for 5 minutes. Viewers are read-only by construction, not by promise.</p>
+      <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-head rise"><div class="kicker">How it works</div><h2>Onboard in an afternoon.</h2></div>
+  <div class="steps stagger">
+    <div class="step rise d1"><h3>Sign in as admin</h3><p>Default <span class="num">admin / admin123</span> — rotate it first thing.</p></div>
+    <div class="step rise d2"><h3>Create the team</h3><p>Operators who dispatch, managers who analyse, viewers who verify.</p></div>
+    <div class="step rise d3"><h3>Watch the log</h3><p>Every action appears with who, what, and when — no silent changes.</p></div>
+    <div class="step rise d4"><h3>Prove it</h3><p>Export the ledger. Savings, CO₂, and peaks — receipted.</p></div>
+  </div>
+  <div class="quote rise" style="margin-top:28px">“Nothing in this grid happens anonymously.”
+    <small>— the admin's first rule</small></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="cta rise">
+    <h2>Hold the keys.</h2>
+    <p>Spin up the console, create your team, and run the first audited dispatch today.</p>
+    <a class="btn btn-acc" href="#demo">Claim the admin seat</a>
+  </div>
+</div></section>
+
+<div class="modal" id="demo"><div class="modal-card">
+  <h3 class="serif" style="font-size:22px">Demo credentials</h3>
+  <p style="color:var(--muted);font-size:13px;margin:6px 0 10px">Paste into the sign-in form. Change before any real use.</p>
+  <code><b>admin</b> / admin123 — full control</code>
+  <code>operator / op123 — dispatch + approve</code>
+  <code>manager / mgr123 — forecast + report</code>
+  <code>viewer / view123 — read-only</code>
+  <div style="display:flex;gap:8px;margin-top:14px">
+    <a class="btn btn-acc" style="flex:1;justify-content:center" href="http://localhost:5174/login">Open the console</a>
+    <a class="btn btn-ghost" href="#">Close</a>
+  </div>
+</div></div>
+
+<footer><div class="wrap">
+  <span>Smart energy optimization and demand response · control room</span>
+  <span style="margin-left:auto"><a href="https://github.com/tusher466/smart-energy-optimization-and-demand-response" target="_blank" rel="noreferrer">Source on GitHub</a></span>
+</div></footer>
+</body>
+</html>

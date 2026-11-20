@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" style="--acc:#5F8F6B">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Managers — Smart energy optimization and demand response</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html"><span class="brand-mark">E</span><span><small>Smart energy optimization</small><b>and demand response</b></span></a>
+  <div class="nav-links">
+    <a href="problem.html">Problem</a>
+    <a href="admin.html">Admin</a><a href="operator.html">Operator</a><a href="manager.html" class="on">Manager</a><a href="viewer.html">Viewer</a>
+    <span class="role-pill">Manager seat</span>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-bg"></div><div class="orb a"></div><div class="orb b"></div>
+<div class="hero-in">
+  <div>
+    <span class="eyebrow rise"><span class="dot"></span>For managers</span>
+    <h1 class="hero-h rise d1">Forecast it. <em>Prove it.</em> Save it.</h1>
+    <p class="lede rise d2">Quantile bands, not single lines. Backtests with honest error bars. Every forecast feeds a dispatch, and every dispatch lands in the ledger as a receipt you can export.</p>
+    <div class="cta-row rise d3">
+      <a class="btn btn-acc" href="#demo">Run a forecast</a>
+      <a class="btn btn-ghost" href="#powers">What you measure</a>
+    </div>
+  </div>
+  <figure class="hero-shot rise d2">
+    <span class="live-tag"><i></i>MAPE ON HOLDOUT</span>
+    <img src="assets/hero-manager.jpg" alt="Aerial view of a solar farm">
+    <figcaption>Aerial solar farm survey — photo: Wikimedia Commons</figcaption>
+  </figure>
+</div></header>
+
+<div class="ticker"><div class="ticker-in">
+  <b>P10–P90 BANDS</b> · VARIABILITY INDEX · <b>MAPE + PINBALL</b> · LIVE CLOUD BLEND · <b>CSV EXPORT</b> · PRINT REPORTS · <b>P10–P90 BANDS</b> · VARIABILITY INDEX · <b>MAPE + PINBALL</b> · LIVE CLOUD BLEND · <b>CSV EXPORT</b> · PRINT REPORTS ·
+</div></div>
+
+<section class="sec" id="powers"><div class="wrap">
+  <div class="sec-head rise">
+    <div class="kicker">Manager powers</div>
+    <h2>Numbers you can defend in a meeting.</h2>
+    <p>Uncertainty first, methodology attached, exports one click away.</p>
+  </div>
+  <div class="grid3 stagger">
+    <div class="fcard rise d1"><span class="ic"><img src="assets/manager.png" alt="Manager icon"></span>
+      <h3>Solar + demand forecasts</h3><p>Clear-sky physics × advected clouds, temperature-aware load — each with confidence, variability index, and the live-vs-synthetic source of every input.</p>
+      <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="fcard rise d2"><span class="ic"><img src="assets/viewer.png" alt="Report icon"></span>
+      <h3>Reports that close deals</h3><p>One-click CSV export, print-friendly summaries, methodology tooltips on every KPI. Pilots turn into contracts when savings are receipted.</p>
+      <div class="stat">1-click <small>CSV + print</small></div></div>
+    <div class="fcard rise d3"><span class="ic"><img src="assets/operator.png" alt="Integrations icon"></span>
+      <h3>Live data, honestly labeled</h3><p>NREL, Open-Meteo, NASA POWER, Electricity Maps and more — each field tagged live or synthetic, with cache timestamps. No black boxes.</p>
+      <div class="stat">10 <small>providers tracked</small></div></div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-head rise"><div class="kicker">From forecast to receipt</div><h2>Karim's Thursday.</h2></div>
+  <div class="steps stagger">
+    <div class="step rise d1"><h3>6am — scan</h3><p>The drone finds a dying diode on a rooftop array. The inspector logs defect D2 before it wastes a month of sun.</p></div>
+    <div class="step rise d2"><h3>9am — forecast</h3><p>Clouds advect over the site; the P10–P90 band widens honestly instead of pretending certainty.</p></div>
+    <div class="step rise d3"><h3>2pm — simulate</h3><p>The 24h day-player shows tonight's charging window and tomorrow's solar in one timeline.</p></div>
+    <div class="step rise d4"><h3>5pm — report</h3><p>Export the ledger: money saved, CO₂ avoided, peak shaved — methodology attached.</p></div>
+  </div>
+  <div class="quote rise" style="margin-top:28px">“A forecast nobody trusts is just weather. Ours comes with a receipt.”
+    <small>Karim, solar technician</small></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="cta rise">
+    <h2>Defend every number.</h2>
+    <p>Run a forecast, check its backtest, and export the proof.</p>
+    <a class="btn btn-acc" href="#demo">Start forecasting</a>
+  </div>
+</div></section>
+
+<div class="modal" id="demo"><div class="modal-card">
+  <h3 class="serif" style="font-size:22px">Demo credentials</h3>
+  <p style="color:var(--muted);font-size:13px;margin:6px 0 10px">Sign in as the manager to unlock forecasts + reports.</p>
+  <code><b>manager</b> / mgr123</code>
+  <div style="display:flex;gap:8px;margin-top:14px">
+    <a class="btn btn-acc" style="flex:1;justify-content:center" href="http://localhost:5174/login">Open the console</a>
+    <a class="btn btn-ghost" href="#">Close</a>
+  </div>
+</div></div>
+
+<footer><div class="wrap">
+  <span>Smart energy optimization and demand response · control room</span>
+  <span style="margin-left:auto"><a href="https://github.com/tusher466/smart-energy-optimization-and-demand-response" target="_blank" rel="noreferrer">Source on GitHub</a></span>
+</div></footer>
+</body>
+</html>
